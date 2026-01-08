@@ -74,7 +74,7 @@ class FrontierExplorationMap(TopDownMap):
         if self._metric is None:  # v0.2.3 doesn't update self._metric in reset_metric
             self.update_metric(episode, None)
         
-        self._draw_target_bbox_mask(episode)
+        # self._draw_target_bbox_mask(episode)
 
         # Expose sufficient info for drawing 3D points on the map
         lower_bound, upper_bound = self._sim.pathfinder.get_bounds()
